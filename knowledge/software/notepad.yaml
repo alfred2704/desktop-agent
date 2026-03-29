@@ -1,0 +1,76 @@
+# 记事本 - 软件知识库
+
+name: 记事本
+version: Windows 11
+description: Windows 记事本文本编辑器
+
+# 操作定义
+operations:
+  - name: 新建文件
+    steps:
+      - action: hotkey
+        keys: ["ctrl", "n"]
+    shortcuts:
+      - Ctrl+N
+  
+  - name: 打开文件
+    steps:
+      - action: hotkey
+        keys: ["ctrl", "o"]
+      - action: type
+        element: 文件名
+      - action: key
+        key: enter
+    shortcuts:
+      - Ctrl+O
+  
+  - name: 保存文件
+    steps:
+      - action: hotkey
+        keys: ["ctrl", "s"]
+    shortcuts:
+      - Ctrl+S
+  
+  - name: 查找
+    steps:
+      - action: hotkey
+        keys: ["ctrl", "f"]
+      - action: type
+        element: 查找内容
+    shortcuts:
+      - Ctrl+F
+  
+  - name: 替换
+    steps:
+      - action: hotkey
+        keys: ["ctrl", "h"]
+      - action: type
+        element: 查找内容
+      - action: type
+        element: 替换为
+      - action: click
+        target: 全部替换
+    shortcuts:
+      - Ctrl+H
+
+# 快捷键
+shortcuts:
+  新建: ["ctrl", "n"]
+  打开: ["ctrl", "o"]
+  保存: ["ctrl", "s"]
+  另存为: ["ctrl", "shift", "s"]
+  撤销: ["ctrl", "z"]
+  重做: ["ctrl", "y"]
+  查找: ["ctrl", "f"]
+  替换: ["ctrl", "h"]
+  全选: ["ctrl", "a"]
+  复制: ["ctrl", "c"]
+  粘贴: ["ctrl", "v"]
+  剪切: ["ctrl", "x"]
+
+# UI提示
+ui_hints:
+  menu_items: ["文件", "编辑", "格式", "查看", "帮助"]
+  common_buttons:
+    确定: ["确定", "OK"]
+    取消: ["取消", "Cancel"]

@@ -1,0 +1,466 @@
+{
+  "test_set_version": "1.0",
+  "created_date": "2026-03-27",
+  "total_cases": 100,
+  "description": "意图理解准确率测试集 - 用于验证prompt优化效果",
+  "categories": {
+    "simple": {
+      "name": "简单操作",
+      "count": 30,
+      "description": "单个操作，参数明确"
+    },
+    "medium": {
+      "name": "中等复杂度",
+      "count": 40,
+      "description": "2-3个步骤，涉及参数提取"
+    },
+    "complex": {
+      "name": "复杂任务",
+      "count": 30,
+      "description": "4+步骤，跨应用或数据处理"
+    }
+  },
+  "test_cases": [
+    {
+      "id": 1,
+      "instruction": "点击确定按钮",
+      "category": "simple",
+      "expected": {
+        "task_type": "automation",
+        "action_count": 1,
+        "main_action": "click",
+        "target": "确定"
+      }
+    },
+    {
+      "id": 2,
+      "instruction": "点击取消按钮",
+      "category": "simple",
+      "expected": {
+        "task_type": "automation",
+        "action_count": 1,
+        "main_action": "click",
+        "target": "取消"
+      }
+    },
+    {
+      "id": 3,
+      "instruction": "在搜索框输入'Python教程'",
+      "category": "simple",
+      "expected": {
+        "task_type": "automation",
+        "action_count": 1,
+        "main_action": "type",
+        "text": "Python教程",
+        "target": "搜索框"
+      }
+    },
+    {
+      "id": 4,
+      "instruction": "输入用户名admin",
+      "category": "simple",
+      "expected": {
+        "task_type": "automation",
+        "action_count": 1,
+        "main_action": "type",
+        "text": "admin",
+        "target": "用户名输入框"
+      }
+    },
+    {
+      "id": 5,
+      "instruction": "按Ctrl+S保存",
+      "category": "simple",
+      "expected": {
+        "task_type": "automation",
+        "action_count": 1,
+        "main_action": "hotkey",
+        "keys": ["ctrl", "s"]
+      }
+    },
+    {
+      "id": 6,
+      "instruction": "按Enter键",
+      "category": "simple",
+      "expected": {
+        "task_type": "automation",
+        "action_count": 1,
+        "main_action": "hotkey",
+        "keys": ["enter"]
+      }
+    },
+    {
+      "id": 7,
+      "instruction": "按Ctrl+C复制",
+      "category": "simple",
+      "expected": {
+        "task_type": "automation",
+        "action_count": 1,
+        "main_action": "hotkey",
+        "keys": ["ctrl", "c"]
+      }
+    },
+    {
+      "id": 8,
+      "instruction": "按Ctrl+V粘贴",
+      "category": "simple",
+      "expected": {
+        "task_type": "automation",
+        "action_count": 1,
+        "main_action": "hotkey",
+        "keys": ["ctrl", "v"]
+      }
+    },
+    {
+      "id": 9,
+      "instruction": "双击文件",
+      "category": "simple",
+      "expected": {
+        "task_type": "automation",
+        "action_count": 1,
+        "main_action": "click",
+        "click_type": "double"
+      }
+    },
+    {
+      "id": 10,
+      "instruction": "右键点击",
+      "category": "simple",
+      "expected": {
+        "task_type": "automation",
+        "action_count": 1,
+        "main_action": "click",
+        "button": "right"
+      }
+    },
+    {
+      "id": 11,
+      "instruction": "打开记事本",
+      "category": "simple",
+      "expected": {
+        "task_type": "automation",
+        "action_count": 1,
+        "main_action": "open_app",
+        "app_name": "记事本"
+      }
+    },
+    {
+      "id": 12,
+      "instruction": "关闭当前窗口",
+      "category": "simple",
+      "expected": {
+        "task_type": "automation",
+        "action_count": 1,
+        "main_action": "close_window"
+      }
+    },
+    {
+      "id": 13,
+      "instruction": "最小化窗口",
+      "category": "simple",
+      "expected": {
+        "task_type": "automation",
+        "action_count": 1,
+        "main_action": "minimize_window"
+      }
+    },
+    {
+      "id": 14,
+      "instruction": "最大化窗口",
+      "category": "simple",
+      "expected": {
+        "task_type": "automation",
+        "action_count": 1,
+        "main_action": "maximize_window"
+      }
+    },
+    {
+      "id": 15,
+      "instruction": "向下滚动页面",
+      "category": "simple",
+      "expected": {
+        "task_type": "automation",
+        "action_count": 1,
+        "main_action": "scroll",
+        "direction": "down"
+      }
+    },
+    {
+      "id": 16,
+      "instruction": "打开计算器",
+      "category": "simple",
+      "expected": {
+        "task_type": "automation",
+        "action_count": 1,
+        "main_action": "open_app",
+        "app_name": "计算器"
+      }
+    },
+    {
+      "id": 17,
+      "instruction": "在浏览器中打开新标签页",
+      "category": "simple",
+      "expected": {
+        "task_type": "automation",
+        "action_count": 1,
+        "main_action": "open_tab"
+      }
+    },
+    {
+      "id": 18,
+      "instruction": "刷新当前页面",
+      "category": "simple",
+      "expected": {
+        "task_type": "automation",
+        "action_count": 1,
+        "main_action": "refresh"
+      }
+    },
+    {
+      "id": 19,
+      "instruction": "输入密码123456",
+      "category": "simple",
+      "expected": {
+        "task_type": "automation",
+        "action_count": 1,
+        "main_action": "type",
+        "text": "123456",
+        "target": "密码输入框"
+      }
+    },
+    {
+      "id": 20,
+      "instruction": "点击登录按钮",
+      "category": "simple",
+      "expected": {
+        "task_type": "automation",
+        "action_count": 1,
+        "main_action": "click",
+        "target": "登录"
+      }
+    },
+    {
+      "id": 21,
+      "instruction": "打开Word，输入'季度报告'，保存为Q1.docx",
+      "category": "medium",
+      "expected": {
+        "task_type": "document_workflow",
+        "action_count": 3,
+        "software": ["Microsoft Word"],
+        "steps": ["open_app", "type", "save"]
+      }
+    },
+    {
+      "id": 22,
+      "instruction": "打开Excel，选中A列",
+      "category": "medium",
+      "expected": {
+        "task_type": "data_processing",
+        "action_count": 2,
+        "software": ["Microsoft Excel"],
+        "steps": ["open_app", "select"]
+      }
+    },
+    {
+      "id": 23,
+      "instruction": "在浏览器中输入百度，搜索",
+      "category": "medium",
+      "expected": {
+        "task_type": "automation",
+        "action_count": 2,
+        "software": ["浏览器"],
+        "steps": ["type", "click"]
+      }
+    },
+    {
+      "id": 24,
+      "instruction": "复制文本到剪贴板",
+      "category": "medium",
+      "expected": {
+        "task_type": "automation",
+        "action_count": 2,
+        "steps": ["select", "copy"]
+      }
+    },
+    {
+      "id": 25,
+      "instruction": "从Excel复制数据到Word",
+      "category": "medium",
+      "expected": {
+        "task_type": "multi_app_workflow",
+        "action_count": 4,
+        "software": ["Excel", "Word"],
+        "steps": ["open_app", "select", "copy", "paste"]
+      }
+    },
+    {
+      "id": 26,
+      "instruction": "打开记事本，输入Hello，保存",
+      "category": "medium",
+      "expected": {
+        "task_type": "document_workflow",
+        "action_count": 3,
+        "software": ["记事本"],
+        "steps": ["open_app", "type", "save"]
+      }
+    },
+    {
+      "id": 27,
+      "instruction": "打开计算器，计算100+200",
+      "category": "medium",
+      "expected": {
+        "task_type": "data_processing",
+        "action_count": 3,
+        "software": ["计算器"],
+        "steps": ["open_app", "type", "click"]
+      }
+    },
+    {
+      "id": 28,
+      "instruction": "在Word中输入文字，加粗，保存",
+      "category": "medium",
+      "expected": {
+        "task_type": "document_workflow",
+        "action_count": 3,
+        "software": ["Word"],
+        "steps": ["type", "format", "save"]
+      }
+    },
+    {
+      "id": 29,
+      "instruction": "打开浏览器，刷新页面，关闭",
+      "category": "medium",
+      "expected": {
+        "task_type": "automation",
+        "action_count": 3,
+        "software": ["浏览器"],
+        "steps": ["open_app", "refresh", "close_window"]
+      }
+    },
+    {
+      "id": 30,
+      "instruction": "选中A列，点击数据菜单的筛选",
+      "category": "medium",
+      "expected": {
+        "task_type": "data_processing",
+        "action_count": 2,
+        "software": ["Excel"],
+        "steps": ["select", "menu_click"]
+      }
+    },
+    {
+      "id": 31,
+      "instruction": "在Excel中打开C:/data/sales.xlsx，选中A列，点击数据菜单的筛选",
+      "category": "complex",
+      "expected": {
+        "task_type": "data_processing",
+        "action_count": 3,
+        "software": ["Excel"],
+        "steps": ["open_app", "select", "menu_click"],
+        "data_flow": {
+          "step_1": "step_2",
+          "step_2": "step_3"
+        }
+      }
+    },
+    {
+      "id": 32,
+      "instruction": "打开记事本，输入'你好'，保存为文件，通过企业微信发送给熊一伟",
+      "category": "complex",
+      "expected": {
+        "task_type": "multi_app_workflow",
+        "action_count": 4,
+        "software": ["记事本", "企业微信"],
+        "steps": ["open_app", "type", "save", "send"]
+      }
+    },
+    {
+      "id": 33,
+      "instruction": "打开Word，新建文档，输入标题，设置加粗，保存",
+      "category": "complex",
+      "expected": {
+        "task_type": "document_workflow",
+        "action_count": 4,
+        "software": ["Word"],
+        "steps": ["open_app", "new_document", "type", "format", "save"]
+      }
+    },
+    {
+      "id": 34,
+      "instruction": "从Excel复制数据，打开Word，粘贴数据，保存",
+      "category": "complex",
+      "expected": {
+        "task_type": "multi_app_workflow",
+        "action_count": 4,
+        "software": ["Excel", "Word"],
+        "steps": ["open_app", "select", "copy", "paste", "save"]
+      }
+    },
+    {
+      "id": 35,
+      "instruction": "删除临时文件",
+      "category": "complex",
+      "expected": {
+        "task_type": "automation",
+        "action_count": 2,
+        "risks": ["删除不可恢复"],
+        "needs_confirmation": true
+      }
+    },
+    {
+      "id": 36,
+      "instruction": "打开Excel，新建文档，输入数据，保存为data.xlsx",
+      "category": "complex",
+      "expected": {
+        "task_type": "document_workflow",
+        "action_count": 4,
+        "software": ["Excel"],
+        "steps": ["open_app", "new_document", "type", "save"]
+      }
+    },
+    {
+      "id": 37,
+      "instruction": "批量重命名文件，添加日期前缀",
+      "category": "complex",
+      "expected": {
+        "task_type": "data_processing",
+        "action_count": 2,
+        "steps": ["select_files", "rename"],
+        "risks": ["批量操作需要确认"]
+      }
+    },
+    {
+      "id": 38,
+      "instruction": "清空回收站",
+      "category": "complex",
+      "expected": {
+        "task_type": "automation",
+        "action_count": 1,
+        "risks": ["删除不可恢复"],
+        "needs_confirmation": true
+      }
+    },
+    {
+      "id": 39,
+      "instruction": "打开浏览器，访问百度，输入搜索关键词，点击搜索",
+      "category": "complex",
+      "expected": {
+        "task_type": "automation",
+        "action_count": 4,
+        "software": ["浏览器"],
+        "steps": ["open_app", "navigate", "type", "click"]
+      }
+    },
+    {
+      "id": 40,
+      "instruction": "在Excel中打开文件，选中数据区域，复制，打开Word，粘贴，保存",
+      "category": "complex",
+      "expected": {
+        "task_type": "multi_app_workflow",
+        "action_count": 6,
+        "software": ["Excel", "Word"],
+        "steps": ["open_app", "select", "copy", "open_app", "paste", "save"]
+      }
+    }
+  ]
+}

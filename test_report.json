@@ -1,0 +1,641 @@
+{
+  "timestamp": "2026-03-25T23:18:00.604681",
+  "duration_seconds": 257.614596,
+  "summary": {
+    "total": 60,
+    "passed": 52,
+    "failed": 8,
+    "success_rate": 0.8666666666666667
+  },
+  "groups": {
+    "基础操作": {
+      "total": 20,
+      "passed": 20,
+      "failed": 0,
+      "details": [
+        {
+          "id": "BASIC_001",
+          "instruction": "点击确定按钮",
+          "success": true,
+          "steps": 1,
+          "software": [],
+          "task_type": "simple_action"
+        },
+        {
+          "id": "BASIC_002",
+          "instruction": "双击文件",
+          "success": true,
+          "steps": 1,
+          "software": [
+            "文件管理器"
+          ],
+          "task_type": "automation"
+        },
+        {
+          "id": "BASIC_003",
+          "instruction": "右键菜单",
+          "success": true,
+          "steps": 1,
+          "software": [
+            "操作系统"
+          ],
+          "task_type": "automation"
+        },
+        {
+          "id": "BASIC_004",
+          "instruction": "输入'Hello World'",
+          "success": true,
+          "steps": 1,
+          "software": [],
+          "task_type": "simple_action"
+        },
+        {
+          "id": "BASIC_005",
+          "instruction": "在搜索框输入'Python'",
+          "success": true,
+          "steps": 1,
+          "software": [
+            "浏览器或搜索应用"
+          ],
+          "task_type": "automation"
+        },
+        {
+          "id": "BASIC_006",
+          "instruction": "按Ctrl+S",
+          "success": true,
+          "steps": 1,
+          "software": [],
+          "task_type": "automation"
+        },
+        {
+          "id": "BASIC_007",
+          "instruction": "向上滚动",
+          "success": true,
+          "steps": 1,
+          "software": [
+            "当前活动应用"
+          ],
+          "task_type": "automation"
+        },
+        {
+          "id": "BASIC_008",
+          "instruction": "等待5秒",
+          "success": true,
+          "steps": 1,
+          "software": [],
+          "task_type": "automation"
+        },
+        {
+          "id": "BASIC_009",
+          "instruction": "查找确定按钮",
+          "success": true,
+          "steps": 1,
+          "software": [
+            "当前活动应用"
+          ],
+          "task_type": "automation"
+        },
+        {
+          "id": "BASIC_010",
+          "instruction": "点击文件菜单下的保存",
+          "success": true,
+          "steps": 1,
+          "software": [],
+          "task_type": "simple_action"
+        },
+        {
+          "id": "BASIC_011",
+          "instruction": "复制选中内容",
+          "success": true,
+          "steps": 1,
+          "software": [],
+          "task_type": "automation"
+        },
+        {
+          "id": "BASIC_012",
+          "instruction": "粘贴到编辑框",
+          "success": true,
+          "steps": 1,
+          "software": [],
+          "task_type": "automation"
+        },
+        {
+          "id": "BASIC_013",
+          "instruction": "拖动文件到文件夹",
+          "success": true,
+          "steps": 1,
+          "software": [
+            "文件管理器"
+          ],
+          "task_type": "automation"
+        },
+        {
+          "id": "BASIC_014",
+          "instruction": "点击第一个按钮",
+          "success": true,
+          "steps": 1,
+          "software": [],
+          "task_type": "simple_action"
+        },
+        {
+          "id": "BASIC_015",
+          "instruction": "点击最后一个文件",
+          "success": true,
+          "steps": 1,
+          "software": [],
+          "task_type": "simple_action"
+        },
+        {
+          "id": "BASIC_016",
+          "instruction": "清空输入框",
+          "success": true,
+          "steps": 3,
+          "software": [
+            "操作系统"
+          ],
+          "task_type": "automation"
+        },
+        {
+          "id": "BASIC_017",
+          "instruction": "截图保存",
+          "success": true,
+          "steps": 4,
+          "software": [
+            "画图"
+          ],
+          "task_type": "automation"
+        },
+        {
+          "id": "BASIC_018",
+          "instruction": "关闭窗口",
+          "success": true,
+          "steps": 1,
+          "software": [],
+          "task_type": "automation"
+        },
+        {
+          "id": "BASIC_019",
+          "instruction": "最大化窗口",
+          "success": true,
+          "steps": 1,
+          "software": [
+            "操作系统"
+          ],
+          "task_type": "automation"
+        },
+        {
+          "id": "BASIC_020",
+          "instruction": "最小化窗口",
+          "success": true,
+          "steps": 1,
+          "software": [
+            "操作系统"
+          ],
+          "task_type": "automation"
+        }
+      ]
+    },
+    "中等复杂度": {
+      "total": 15,
+      "passed": 14,
+      "failed": 1,
+      "details": [
+        {
+          "id": "MEDIUM_001",
+          "instruction": "打开记事本，输入'你好'，保存文件",
+          "success": true,
+          "steps": 3,
+          "software": [
+            "记事本"
+          ],
+          "task_type": "document_workflow"
+        },
+        {
+          "id": "MEDIUM_002",
+          "instruction": "打开Word，写一份报告，保存为'月报.docx'",
+          "success": true,
+          "steps": 3,
+          "software": [
+            "Word"
+          ],
+          "task_type": "document_workflow"
+        },
+        {
+          "id": "MEDIUM_003",
+          "instruction": "打开微信，发消息给张三说'明天开会'",
+          "success": true,
+          "steps": 6,
+          "software": [
+            "微信"
+          ],
+          "task_type": "communication"
+        },
+        {
+          "id": "MEDIUM_004",
+          "instruction": "打开浏览器，搜索'Python教程'，打开第一个结果",
+          "success": true,
+          "steps": 4,
+          "software": [
+            "浏览器"
+          ],
+          "task_type": "multi_app_workflow"
+        },
+        {
+          "id": "MEDIUM_005",
+          "instruction": "打开Excel，在A1输入'姓名'，B1输入'年龄'",
+          "success": true,
+          "steps": 3,
+          "software": [
+            "Excel"
+          ],
+          "task_type": "document_workflow"
+        },
+        {
+          "id": "MEDIUM_006",
+          "instruction": "点击文件，选择另存为，输入文件名'测试'，点击保存",
+          "success": false,
+          "steps": 1,
+          "software": [],
+          "task_type": "simple_action"
+        },
+        {
+          "id": "MEDIUM_007",
+          "instruction": "选中所有文本，复制，打开新文档，粘贴",
+          "success": true,
+          "steps": 4,
+          "software": [
+            "文本编辑器"
+          ],
+          "task_type": "document_workflow"
+        },
+        {
+          "id": "MEDIUM_008",
+          "instruction": "打开计算器，输入5+3，按等号",
+          "success": true,
+          "steps": 3,
+          "software": [
+            "计算器"
+          ],
+          "task_type": "automation"
+        },
+        {
+          "id": "MEDIUM_009",
+          "instruction": "打开邮件，新建邮件，输入收件人，发送",
+          "success": true,
+          "steps": 4,
+          "software": [
+            "邮件客户端"
+          ],
+          "task_type": "communication"
+        },
+        {
+          "id": "MEDIUM_010",
+          "instruction": "打开设置，找到网络，打开WiFi，连接到'HomeWiFi'",
+          "success": true,
+          "steps": 5,
+          "software": [
+            "系统设置"
+          ],
+          "task_type": "automation"
+        },
+        {
+          "id": "MEDIUM_011",
+          "instruction": "打开文件夹，选中所有文件，复制到另一个文件夹",
+          "success": true,
+          "steps": 8,
+          "software": [
+            "文件资源管理器"
+          ],
+          "task_type": "automation"
+        },
+        {
+          "id": "MEDIUM_012",
+          "instruction": "打开播放器，添加文件'音乐.mp3'，播放",
+          "success": true,
+          "steps": 5,
+          "software": [
+            "播放器"
+          ],
+          "task_type": "automation"
+        },
+        {
+          "id": "MEDIUM_013",
+          "instruction": "打开图片，调整大小为800x600，保存",
+          "success": true,
+          "steps": 4,
+          "software": [
+            "图片查看器",
+            "图片编辑器"
+          ],
+          "task_type": "document_workflow"
+        },
+        {
+          "id": "MEDIUM_014",
+          "instruction": "打开PDF，跳转到第10页，截图，保存",
+          "success": true,
+          "steps": 5,
+          "software": [
+            "PDF阅读器",
+            "截图工具"
+          ],
+          "task_type": "document_workflow"
+        },
+        {
+          "id": "MEDIUM_015",
+          "instruction": "打开命令行，输入'ping google.com'，等待结果",
+          "success": true,
+          "steps": 4,
+          "software": [
+            "命令行提示符"
+          ],
+          "task_type": "automation"
+        }
+      ]
+    },
+    "高复杂度": {
+      "total": 10,
+      "passed": 9,
+      "failed": 1,
+      "details": [
+        {
+          "id": "HIGH_001",
+          "instruction": "从Excel复制数据，粘贴到Word，保存，发送邮件给老板",
+          "success": true,
+          "steps": 6,
+          "software": [
+            "Excel",
+            "Word",
+            "邮件客户端"
+          ],
+          "task_type": "multi_app_workflow"
+        },
+        {
+          "id": "HIGH_002",
+          "instruction": "打开浏览器，搜索产品信息，截图，保存到Word文档",
+          "success": true,
+          "steps": 7,
+          "software": [
+            "浏览器",
+            "Word"
+          ],
+          "task_type": "multi_app_workflow"
+        },
+        {
+          "id": "HIGH_003",
+          "instruction": "打开记事本，输入代码，保存为.py文件，运行Python",
+          "success": true,
+          "steps": 4,
+          "software": [
+            "记事本",
+            "Python"
+          ],
+          "task_type": "multi_app_workflow"
+        },
+        {
+          "id": "HIGH_004",
+          "instruction": "打开ERP系统，查询订单，导出Excel，发送给客户",
+          "success": true,
+          "steps": 6,
+          "software": [
+            "ERP系统",
+            "Excel",
+            "邮件/即时通讯工具"
+          ],
+          "task_type": "multi_app_workflow"
+        },
+        {
+          "id": "HIGH_005",
+          "instruction": "打开微信，接收文件，保存到桌面，用Excel打开",
+          "success": true,
+          "steps": 5,
+          "software": [
+            "微信",
+            "Excel"
+          ],
+          "task_type": "multi_app_workflow"
+        },
+        {
+          "id": "HIGH_006",
+          "instruction": "打开数据库工具，执行查询，导出结果，生成报告",
+          "success": true,
+          "steps": 5,
+          "software": [
+            "数据库工具"
+          ],
+          "task_type": "data_processing"
+        },
+        {
+          "id": "HIGH_007",
+          "instruction": "打开Photoshop，调整图片，导出PNG，上传到网站",
+          "success": false,
+          "steps": 6,
+          "software": [
+            "Photoshop",
+            "浏览器"
+          ],
+          "task_type": "multi_app_workflow"
+        },
+        {
+          "id": "HIGH_008",
+          "instruction": "打开视频编辑器，剪辑视频，添加字幕，导出MP4",
+          "success": true,
+          "steps": 8,
+          "software": [
+            "视频编辑器"
+          ],
+          "task_type": "multi_app_workflow"
+        },
+        {
+          "id": "HIGH_009",
+          "instruction": "打开企业微信，创建群聊，邀请3个人，发送消息",
+          "success": true,
+          "steps": 7,
+          "software": [
+            "企业微信"
+          ],
+          "task_type": "communication"
+        },
+        {
+          "id": "HIGH_010",
+          "instruction": "打开浏览器，登录网站，填写表单，提交，截图确认",
+          "success": true,
+          "steps": 9,
+          "software": [
+            "浏览器"
+          ],
+          "task_type": "multi_app_workflow"
+        }
+      ]
+    },
+    "企业级场景": {
+      "total": 5,
+      "passed": 3,
+      "failed": 2,
+      "details": [
+        {
+          "id": "ENTERPRISE_001",
+          "instruction": "帮我登录工商银行网银下载流水，把流水与ERP中的客户收款信息进行核对",
+          "success": true,
+          "steps": 15,
+          "software": [
+            "工商银行网银",
+            "ERP系统"
+          ],
+          "task_type": "multi_app_workflow"
+        },
+        {
+          "id": "ENTERPRISE_002",
+          "instruction": "打开Excel表，将Excel表里的收货日期、收货的数目以及金额进行整理匹配。同工商银行的网上下载的流水进行比对，数据有1000条，请重复这个过程",
+          "success": false,
+          "steps": 8,
+          "software": [
+            "Excel",
+            "工商银行网银"
+          ],
+          "task_type": "data_processing"
+        },
+        {
+          "id": "ENTERPRISE_003",
+          "instruction": "从CRM系统导出客户名单，筛选出本月新增客户，生成Excel报表，发送给销售经理",
+          "success": true,
+          "steps": 8,
+          "software": [
+            "CRM系统",
+            "Excel",
+            "邮件/企业微信"
+          ],
+          "task_type": "data_processing"
+        },
+        {
+          "id": "ENTERPRISE_004",
+          "instruction": "打开财务系统，核对本月发票，与银行对账单比对，标记差异项，生成差异报告",
+          "success": true,
+          "steps": 15,
+          "software": [
+            "财务系统",
+            "银行对账单系统",
+            "Excel"
+          ],
+          "task_type": "multi_app_workflow"
+        },
+        {
+          "id": "ENTERPRISE_005",
+          "instruction": "从生产系统读取数据，分析良品率，生成图表，插入PPT，发送周报邮件",
+          "success": false,
+          "steps": 12,
+          "software": [
+            "生产系统",
+            "数据分析工具",
+            "PowerPoint",
+            "邮件客户端"
+          ],
+          "task_type": "multi_app_workflow"
+        }
+      ]
+    },
+    "边界情况": {
+      "total": 10,
+      "passed": 6,
+      "failed": 4,
+      "details": [
+        {
+          "id": "EDGE_001",
+          "instruction": "如果找到确定按钮就点击，否则继续搜索",
+          "success": false,
+          "steps": 3,
+          "software": [
+            "桌面应用"
+          ],
+          "task_type": "automation"
+        },
+        {
+          "id": "EDGE_002",
+          "instruction": "重复点击确定按钮3次",
+          "success": false,
+          "steps": 1,
+          "software": [
+            "通用桌面应用"
+          ],
+          "task_type": "automation"
+        },
+        {
+          "id": "EDGE_003",
+          "instruction": "如果价格小于100就购买，否则跳过",
+          "success": true,
+          "steps": 5,
+          "software": [
+            "浏览器/电商应用"
+          ],
+          "task_type": "automation"
+        },
+        {
+          "id": "EDGE_004",
+          "instruction": "等待10秒后继续",
+          "success": true,
+          "steps": 1,
+          "software": [],
+          "task_type": "automation"
+        },
+        {
+          "id": "EDGE_005",
+          "instruction": "循环处理所有文件直到完成",
+          "success": false,
+          "steps": 8,
+          "software": [
+            "文件管理器",
+            "处理工具"
+          ],
+          "task_type": "data_processing"
+        },
+        {
+          "id": "EDGE_006",
+          "instruction": "如果失败就重试5次",
+          "success": false,
+          "steps": 1,
+          "software": [
+            "自动化工具"
+          ],
+          "task_type": "automation"
+        },
+        {
+          "id": "EDGE_007",
+          "instruction": "同时打开3个Excel文件",
+          "success": true,
+          "steps": 3,
+          "software": [
+            "Excel"
+          ],
+          "task_type": "document_workflow"
+        },
+        {
+          "id": "EDGE_008",
+          "instruction": "弹出对话框让用户确认",
+          "success": true,
+          "steps": 3,
+          "software": [
+            "操作系统"
+          ],
+          "task_type": "automation"
+        },
+        {
+          "id": "EDGE_009",
+          "instruction": "点击那个红色的按钮",
+          "success": true,
+          "steps": 1,
+          "software": [],
+          "task_type": "simple_action"
+        },
+        {
+          "id": "EDGE_010",
+          "instruction": "把刚才复制的内容粘贴到这里",
+          "success": true,
+          "steps": 1,
+          "software": [
+            "操作系统"
+          ],
+          "task_type": "automation"
+        }
+      ]
+    }
+  }
+}
